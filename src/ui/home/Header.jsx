@@ -1,13 +1,13 @@
-import NavBar from '../../components/Home/NavBar'
-import Hero from './Hero'
+import NavBar from '../../components/Home/NavBar';
+import Hero from './Hero';
 
 function Header() {
-	return (
-		<div>
-			<NavBar />
-			<Hero />
-		</div>
-	)
+  return (
+    <div>
+      <NavBar />
+      <Hero />
+    </div>
+  );
 }
 
-export default Header
+export default Header;

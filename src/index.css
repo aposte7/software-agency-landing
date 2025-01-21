@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #323;
+}
+nav {
+  box-shadow: inset 0px 1.5px 1.5px rgba(255, 255, 255, 0.2);
+}
+
+a {
+  cursor: pointer;
+}
+.linkBtn {
+  box-shadow: 0px 0px 9px 1px theme('colors.lighter-1');
+}
+
+.circle1 {
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  background-color: theme('colors.lighter-1');
+
+  box-shadow:
+    0px 0px 15px 3px theme('colors.lighter-3'),
+    inset 18px -30px 40px theme('colors.darker-3'),
+    inset -5px 10px 10px theme('colors.lighter-2');
+}
+
+.textGlow {
+  text-shadow:
+    0px 1px 7px theme('colors.lighter-1'),
+    1px 0px 7px theme('colors.lighter-2');
+}

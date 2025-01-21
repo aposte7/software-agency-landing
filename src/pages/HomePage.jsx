@@ -2,7 +2,7 @@ import Header from '../ui/Home/Header'
 
 function HomePage() {
 	return (
-		<div>
+		<div className="bg-primary-b">
 			<Header />
 		</div>
 	)
