@@ -4,7 +4,7 @@ import OfferBox from '../../components/home/OfferBox';
 
 function OfferSection() {
   return (
-    <div className='mx-auto max-w-[78rem] px-6 pb-16 pt-32 text-white'>
+    <section className='px-6 pb-16 pt-32 text-white'>
       <div className='flex w-full items-center justify-between py-5'>
         <h2 className='text-[2rem] font-medium'>What We Offer</h2>
 
@@ -101,7 +101,7 @@ function OfferSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

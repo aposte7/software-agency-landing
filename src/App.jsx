@@ -1,11 +1,11 @@
-import HomePage from './pages/HomePage'
+import HomePage from './pages/HomePage';
 
 function App() {
-	return (
-		<>
-			<HomePage />
-		</>
-	)
+  return (
+    <div className='overflow-x-hidden bg-primary-b'>
+      <HomePage />
+    </div>
+  );
 }
 
-export default App
+export default App;

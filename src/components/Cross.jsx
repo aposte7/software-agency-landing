@@ -1,0 +1,11 @@
+function Cross({ children, styling_after, styling_before, styling }) {
+  return (
+    <div
+      className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-lighter-2 ${styling_after} ${styling_before} ${styling}`}
+    >
+      {children}
+    </div>
+  );
+}
+
+export default Cross;

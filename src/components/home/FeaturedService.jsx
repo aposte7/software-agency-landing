@@ -1,6 +1,6 @@
 import Circle from '../Circle';
 
-export function FeatureService({ title, icon, children, style }) {
+export function FeaturedService({ title, icon, children, style }) {
   return (
     <div className={`space-y-4 ${style}`}>
       <Circle height='5.5rem' width='5.5rem' styling='circle1 rounded-full'>

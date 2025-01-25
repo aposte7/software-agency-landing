@@ -1,6 +1,6 @@
 function NavBar() {
   return (
-    <div className='mx-auto flex w-full max-w-[78rem] items-center justify-between px-6 py-4 text-cyan-50'>
+    <div className='flex w-full items-center justify-between px-6 py-4 text-cyan-50'>
       <a className='text-3xl font-semibold'>Logo-her</a>
 
       <nav className='navBar flex w-[30rem] items-center justify-between rounded-full border border-solid border-white/10 bg-white/10 px-9 py-3 backdrop-blur-sm'>
