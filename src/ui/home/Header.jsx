@@ -3,7 +3,7 @@ import Hero from './Hero';
 
 function Header() {
   return (
-    <div>
+    <div className='relative overflow-x-hidden'>
       <NavBar />
       <Hero />
     </div>

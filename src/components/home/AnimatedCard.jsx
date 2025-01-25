@@ -1,5 +1,12 @@
-export function AnimatedCard({ style }) {
+export function AnimatedCard({
+  height = 'h-[16rem]',
+  width = 'w-[8rem]',
+  styling,
+  anime = true,
+}) {
   return (
-    <div className={`card absolute h-48 w-28 bg-primary-c ${style}`}></div>
+    <div className={` ${height} ${width} ${styling}`}>
+      {anime && <div className='card-animation'></div>}
+    </div>
   );
 }

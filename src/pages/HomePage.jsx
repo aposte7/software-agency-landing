@@ -1,11 +1,13 @@
-import Header from '../ui/Home/Header'
+import Header from '../ui/Home/Header';
+import OfferSection from '../ui/home/OfferSection';
 
 function HomePage() {
-	return (
-		<div className="bg-primary-b">
-			<Header />
-		</div>
-	)
+  return (
+    <div className='bg-primary-b'>
+      <Header />
+      <OfferSection />
+    </div>
+  );
 }
 
-export default HomePage
+export default HomePage;
