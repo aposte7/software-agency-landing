@@ -11,6 +11,7 @@ export default {
         'lighter-2': '#5aa7f5',
         'lighter-3': '#0b83ff',
         'lighter-4': '#00e9de',
+        'lighter-5': '#00dcff',
         'darker-1': '#080a11',
         'darker-2': '#000a11',
         'darker-3': '#090912',
