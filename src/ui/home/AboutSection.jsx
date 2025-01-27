@@ -1,5 +1,6 @@
 import Circle from '../../components/Circle';
 import Cross from '../../components/Cross';
+import LinkButton from '../../components/LinkButton';
 
 function AboutSection() {
   return (
@@ -14,12 +15,8 @@ function AboutSection() {
           </p>
 
           <div className='flex gap-14'>
-            <a href='#' className='linkBtn w-fit px-3 py-1 text-center'>
-              Hire Us
-            </a>
-            <a href='#' className='linkBtn w-fit px-4 text-center'>
-              Learn More
-            </a>
+            <LinkButton>Hire Us</LinkButton>
+            <LinkButton> Learn More</LinkButton>
           </div>
         </div>
 

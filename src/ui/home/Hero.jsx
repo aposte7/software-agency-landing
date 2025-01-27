@@ -1,10 +1,11 @@
 import Circle from '../../components/Circle';
 import { AnimatedCard } from '../../components/home/AnimatedCard';
 import { FeaturedService } from '../../components/home/FeaturedService';
+import LinkButton from '../../components/LinkButton';
 
 function Hero() {
   return (
-    <div className='grid grid-rows-2 px-6 pt-7 text-slate-50 md:grid-cols-2 md:grid-rows-1'>
+    <div className='grid grid-rows-2 px-6 pt-14 text-slate-50 md:grid-cols-2 md:grid-rows-1'>
       <div className='overlay after:translate-1/2 absolute left-[75%] top-[0] h-[700px] w-[700px] -translate-x-1/2 rounded-full after:absolute after:left-1/3 after:top-1/3 after:h-[100px] after:w-[100px] after:rounded-full after:bg-lighter-2'></div>
 
       <div>
@@ -20,12 +21,7 @@ function Hero() {
             of quality and innovation.
           </p>
           <div className='pt-5'>
-            <a
-              className='linkBtn max-w-fit rounded px-6 py-2 text-base'
-              href=''
-            >
-              Get Started
-            </a>
+            <LinkButton>Get start</LinkButton>
           </div>
         </div>
 
