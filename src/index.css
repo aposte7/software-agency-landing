@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(225, 53%, 19%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(225, 39%, 26%);
+  border-radius: 4px;
+}
+
 nav {
   box-shadow: inset 0px 1.5px 1.5px rgba(255, 255, 255, 0.2);
 }
@@ -20,15 +33,17 @@ ion-icon {
 
 .overlay {
   box-shadow:
-    0px 0px 80px 5px theme('colors.primary-c'),
-    0px 0px 100px theme('colors.lighter-1');
+    0px 0px 100px theme('colors.primary-c'),
+    inset 0px 0px 80px theme('colors.lighter-1');
   filter: blur(60px);
   z-index: 0;
 }
 
 .overlay::after {
-  box-shadow: inset 0px 0px 10px #000a11;
-  filter: blur(40px);
+  box-shadow:
+    inset 0px 0px 10px #000a11,
+    inset 0px 0px 30px 20px theme('colors.lighter-3');
+  filter: blur(30px);
   z-index: 0;
 }
 .linkBtn {
@@ -331,64 +346,6 @@ ion-icon {
     background-color: theme('colors.darker-4');
   }
 }
-/* .cross {
-  content: '';
-  width: 5px;
-  height: 250px;
-  border-radius: 50%;
-  margin-bottom: 30px;
-  background-color: #2fc0ff;
-  box-shadow:
-    0px 0px 10px #219cf3,
-    3px 3px 1px #00e9de,
-    inset 10px 0px 20px #000a11,
-    inset -96px -30px 100px #090912,
-    inset -6px -26px 120px #0b83ff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-
-  animation: card-anime 6s ease-out infinite forwards;
-}
-.cross::after {
-  content: '';
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin-bottom: 30px;
-  background-color: #2fc0ff;
-  box-shadow:
-    0px 0px 10px #219cf3,
-    3px 3px 1px #00e9de,
-    inset 10px 0px 20px #000a11,
-    inset -96px -30px 100px #090912,
-    inset -6px -26px 120px #0b83ff;
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.cross::before {
-  content: '';
-  width: 125px;
-  height: 5px;
-  border-radius: 50%;
-  margin-bottom: 30px;
-  background-color: #2fc0ff;
-  box-shadow:
-    0px 0px 10px #219cf3,
-    3px 3px 1px #00e9de,
-    inset 10px 0px 20px #000a11,
-    inset -96px -30px 100px #090912,
-    inset -6px -26px 120px #0b83ff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 
 .cross {
   box-shadow:
@@ -546,4 +503,34 @@ ion-icon {
     0px 0px 0px 1px theme('colors.lighter-1'),
     0px 0px 15px 4px theme('colors.lighter-3'),
     inset 0px 0px 20px 1px theme('colors.lighter-1');
+}
+
+/* ANIMATION FOR FAD IN and reveal on scroll  */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(125px);
+  transition:
+    opacity 0.9s ease-in-out,
+    transform 0.9s ease-in-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-animation {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

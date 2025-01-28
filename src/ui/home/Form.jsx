@@ -6,10 +6,11 @@ function Form() {
           Name
         </label>
         <input
+          autoComplete='off'
           type='text'
           name='username'
           id='username'
-          className='w-full border border-b-2 border-transparent border-b-lighter-5 bg-transparent pb-1 text-xl text-slate-500 focus:bg-lighter-1/10 focus:outline-none'
+          className='w-full border border-b-2 border-transparent border-b-lighter-5 bg-transparent pb-1 text-xl text-gray-100 focus:bg-lighter-1/10 focus:outline-none'
         />
       </div>
       <div className='w-[22rem] space-y-4'>
@@ -17,10 +18,11 @@ function Form() {
           Email
         </label>
         <input
+          autoComplete='off'
           type='text'
           name='username'
           id='username'
-          className='w-full border border-b-2 border-transparent border-b-lighter-5 bg-transparent pb-1 text-xl text-slate-500 focus:bg-lighter-1/10 focus:outline-none'
+          className='w-full border border-b-2 border-transparent border-b-lighter-5 bg-transparent pb-1 text-xl text-gray-100 focus:bg-lighter-1/10 focus:outline-none'
         />
       </div>
       <div className='w-[22rem] space-y-4'>
@@ -28,7 +30,7 @@ function Form() {
           Description
         </label>
         <textarea
-          className='w-full border border-b-2 border-transparent border-b-lighter-5 bg-transparent p-1 pb-1 text-xl text-slate-500 focus:bg-lighter-1/10 focus:outline-none'
+          className='w-full border border-b-2 border-transparent border-b-lighter-5 bg-transparent p-1 pb-1 text-xl text-gray-100 focus:bg-lighter-1/10 focus:outline-none'
           name='description'
           id=''
           rows='5'

@@ -1,4 +1,5 @@
 import Circle from '../../components/Circle';
+import FadeInSection from '../../components/FadeInSection';
 import { AnimatedCard } from '../../components/home/AnimatedCard';
 import { FeaturedService } from '../../components/home/FeaturedService';
 import LinkButton from '../../components/LinkButton';
@@ -6,9 +7,9 @@ import LinkButton from '../../components/LinkButton';
 function Hero() {
   return (
     <div className='grid grid-rows-2 px-6 pt-14 text-slate-50 md:grid-cols-2 md:grid-rows-1'>
-      <div className='overlay after:translate-1/2 absolute left-[75%] top-[0] h-[700px] w-[700px] -translate-x-1/2 rounded-full after:absolute after:left-1/3 after:top-1/3 after:h-[100px] after:w-[100px] after:rounded-full after:bg-lighter-2'></div>
+      <div className='overlay absolute left-[80%] top-[2rem] h-[700px] w-[700px] -translate-x-1/2 rounded-full after:absolute after:left-1/2 after:top-1/2 after:h-32 after:w-32 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-lighter-2'></div>
 
-      <div>
+      <FadeInSection>
         {/* text start*/}
         <div className='w-[30rem] space-y-4 text-left'>
           <h1 className='py-2 text-3xl font-semibold'>
@@ -50,7 +51,7 @@ function Hero() {
         </div>
 
         {/* text end*/}
-      </div>
+      </FadeInSection>
       {/**Column 1 End */}
 
       {/**Column 2 start */}

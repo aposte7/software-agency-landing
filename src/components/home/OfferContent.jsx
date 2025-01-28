@@ -9,7 +9,7 @@ export function OfferContent({
 }) {
   return (
     <div
-      className={`${styling} ${reverse && 'flex-row-reverse'} offer-detail-square flex h-[37rem] w-full items-center justify-between rounded-xl px-12 py-12`}
+      className={`${styling} ${reverse && 'flex-row-reverse'} offer-detail-square flex h-[37rem] w-full items-center justify-between rounded-xl bg-darker-4 px-12 py-12`}
     >
       <div className='max-w-[500px] space-y-6'>
         <h3 className='text-3xl font-medium'>{label} </h3>

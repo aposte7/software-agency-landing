@@ -2,7 +2,7 @@ import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <div className='overflow-x-hidden bg-primary-b'>
+    <div className='overflow-hidden bg-primary-b'>
       <HomePage />
     </div>
   );
