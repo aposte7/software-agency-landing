@@ -10,8 +10,8 @@ function ClientSection() {
           <p>See What our client company say about us</p>
         </div>
 
-        <div className='flex h-[25rem] items-center gap-12'>
-          <div className='about-box group relative h-full w-[23rem] overflow-x-hidden rounded-3xl bg-darker-3 p-12 transition-all duration-500 ease-in-out hover:w-[53rem]'>
+        <div className='flex h-[78rem] flex-col items-center gap-12 lg:h-[25rem] lg:flex-row'>
+          <div className='about-box group relative h-full w-[23rem] overflow-x-hidden rounded-3xl bg-darker-3 p-12 transition-all duration-500 ease-in-out hover:w-[40rem] lg:hover:w-[53rem]'>
             <Circle
               height='6.5rem'
               width='6.5rem'
@@ -27,7 +27,7 @@ function ClientSection() {
             </div>
           </div>
 
-          <div className='about-box group relative h-full w-[23rem] overflow-x-hidden rounded-3xl bg-darker-3 p-12 transition-all duration-500 ease-in-out hover:w-[53rem]'>
+          <div className='about-box group relative h-full w-[23rem] overflow-x-hidden rounded-3xl bg-darker-3 p-12 transition-all duration-500 ease-in-out hover:w-[40rem] lg:hover:w-[53rem]'>
             <Circle
               height='6.5rem'
               width='6.5rem'
@@ -42,7 +42,7 @@ function ClientSection() {
               <p className='w-60'>It's Been Good Time Working With This Team</p>
             </div>
           </div>
-          <div className='about-box group relative h-full w-[23rem] overflow-x-hidden rounded-3xl bg-darker-3 p-12 transition-all duration-500 ease-in-out hover:w-[53rem]'>
+          <div className='about-box group relative h-full w-[23rem] overflow-x-hidden rounded-3xl bg-darker-3 p-12 transition-all duration-500 ease-in-out hover:w-[40rem] lg:hover:w-[53rem]'>
             <Circle
               height='6.5rem'
               width='6.5rem'

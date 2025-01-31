@@ -45,7 +45,7 @@ function ProjectSection() {
           <h2 className='text-4xl font-semibold'>Our Project</h2>
           <p>See Our Projects What We Made Feel Deep With Us</p>
         </div>
-        <div className='grid h-[550px] grid-cols-[15rem_1fr] gap-24'>
+        <div className='grid grid-cols-1 grid-rows-2 gap-0 md:grid-cols-[15rem_1fr] md:grid-rows-1 md:gap-24'>
           {/* Left Side */}
           <div className='self-center py-7'>
             <div className='relative flex h-[22rem] flex-col justify-between'>

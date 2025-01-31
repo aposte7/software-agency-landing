@@ -58,7 +58,7 @@ function OfferSection() {
           </p>
         </div>
 
-        <div className='relative z-10 flex items-center justify-between pt-20'>
+        <div className='relative z-10 grid grid-cols-2 grid-rows-2 justify-items-center gap-16 pt-20 2md:grid-cols-4 2md:grid-rows-1'>
           {Tabs.map((value, index) => (
             <OfferBox
               key={value.id}

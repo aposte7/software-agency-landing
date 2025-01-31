@@ -10,7 +10,7 @@ function OfferBox({
   return (
     <div
       onClick={handleOnClick}
-      className={`${active && 'active-offer'} relative h-[13rem] w-[12.5rem] cursor-pointer space-y-9 rounded-xl border border-white/50 bg-darker-4/90 p-8 text-center hover:bg-darker-4 ${styling}`}
+      className={`${active && 'active-offer'} relative h-[13rem] w-[11.5rem] cursor-pointer space-y-9 rounded-xl border border-white/50 bg-darker-4/90 p-8 text-center hover:bg-darker-4 2md:w-[12.5rem] ${styling}`}
     >
       <Circle
         height='3.5rem'
@@ -21,7 +21,7 @@ function OfferBox({
       </Circle>
       <p className='font-semibold'>{label}</p>
       <div
-        className={` ${active && 'offer-box-line'} absolute left-1/2 top-1/4 -z-10 h-40 w-32 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-lighter-1 opacity-0`}
+        className={` ${active && 'offer-box-line'} absolute left-1/2 top-1/4 -z-10 hidden h-40 w-32 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-lighter-1 opacity-0 2md:block`}
       ></div>
     </div>
   );

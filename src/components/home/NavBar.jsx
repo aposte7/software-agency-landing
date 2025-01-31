@@ -13,9 +13,9 @@ function NavBar() {
 
   return (
     <div className='flex w-full items-center justify-between px-6 py-4 text-cyan-50'>
-      <a className='text-3xl font-semibold'>Logo-her</a>
+      <a className='text-3xl font-semibold'>Logo</a>
 
-      <nav className='navBar relative flex w-[30rem] items-center justify-between rounded-full border border-solid border-white/10 bg-white/10 px-9 py-3 backdrop-blur-sm'>
+      <nav className='navBar relative hidden w-[30rem] items-center justify-between rounded-full border border-solid border-white/10 bg-white/10 px-9 py-3 backdrop-blur-sm md:flex'>
         <a
           className={`relative ${
             activeLink === 'Home' ? 'text-white' : 'text-white/50'
@@ -59,7 +59,7 @@ function NavBar() {
         ></span>
       </nav>
 
-      <div className='flex items-center gap-5'>
+      <div className='hidden items-center gap-5 lg:flex'>
         <a>Sign up</a>
         <a className='rounded-md border border-stone-700/50 bg-slate-700/20 px-4 py-1 text-center'>
           Login

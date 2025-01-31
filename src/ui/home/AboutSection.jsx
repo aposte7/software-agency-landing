@@ -7,8 +7,8 @@ function AboutSection() {
   return (
     <FadeInSection>
       <section className='mt-5 w-full px-6 pt-64 text-white'>
-        <div className='grid h-[52rem] grid-cols-12 grid-rows-12 pb-20'>
-          <div className='col-span-4 row-span-4 space-y-7'>
+        <div className='grid h-[70rem] grid-cols-12 grid-rows-12 pb-20 lg:h-[52rem]'>
+          <div className='col-start-3 col-end-10 row-start-1 space-y-7 lg:col-span-4 lg:row-span-4'>
             <h2 className='text-3xl font-medium'>Why WE ?</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
@@ -22,7 +22,7 @@ function AboutSection() {
             </div>
           </div>
 
-          <div className='about-box col-span-full col-start-6 row-span-8 row-start-1 box-border h-[28rem] w-[40rem] items-center justify-self-end rounded-xl bg-darker-2'>
+          <div className='about-box col-span-full col-start-6 row-span-6 row-start-4 box-border h-[28rem] w-[40rem] items-center self-center justify-self-end rounded-xl bg-darker-2 lg:row-start-1 lg:self-auto'>
             <div className='relative flex h-full items-center justify-between px-12'>
               <div className='space-y-6'>
                 <Circle styling='circle1 relative   text-center text-5xl rounded-full'>
@@ -63,7 +63,7 @@ function AboutSection() {
             </div>
           </div>
 
-          <div className='about-box col-span-7 col-start-1 row-span-full row-start-6 h-[26rem] w-[42rem] rounded-xl bg-darker-3'>
+          <div className='about-box col-span-7 col-start-1 row-span-full row-start-8 h-[26rem] w-[42rem] rounded-xl bg-darker-3 lg:row-start-6'>
             <div className='relative grid h-full w-full grid-cols-2 items-center justify-items-center'>
               <div className='space-y-4'>
                 <p className='text-3xl font-semibold'>10</p>

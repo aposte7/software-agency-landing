@@ -3,9 +3,14 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        '1sm': '462px',
+        '2md': '961px',
+        '2lg': '1123px',
+      },
       colors: {
         'primary-b': '#090d1c',
-        '	secondary-c': '#100a1d',
+        'secondary-c': '#100a1d',
         'primary-c': '#2fc0ff',
         'lighter-1': '#219cf3',
         'lighter-2': '#5aa7f5',

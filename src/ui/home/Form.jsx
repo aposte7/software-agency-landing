@@ -1,6 +1,6 @@
 function Form() {
   return (
-    <form className='mx-auto w-[30rem] space-y-4'>
+    <form className='m-auto w-fit space-y-4'>
       <div className='w-[22rem] space-y-4'>
         <label className='text-xl' htmlFor='username'>
           Name
